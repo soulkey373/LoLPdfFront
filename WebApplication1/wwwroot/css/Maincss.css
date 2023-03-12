@@ -1,0 +1,97 @@
+﻿.exampleModalToggle {
+    color: #000;
+    background-color: rgb(25, 26, 26);
+}
+
+.modal-content {
+    background-color: #1e1e1e; /* 更改背景顏色 */
+    color: #ffffff; /* 更改字體顏色 */
+}
+
+.modal-content {
+    border: 1px solid #ffffff; /* 增加邊框 */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1); /* 增加陰影 */
+}
+
+.modal-header {
+    margin-top: 30px;
+    background-color: #007bff; /* 更改標題背景顏色 */
+    color: #ffffff; /* 更改標題字體顏色 */
+}
+
+.modal-footer .report {
+    border-color: #007bff; /* 更改邊框顏色 */
+    background-color: #007bff; /* 更改背景顏色 */
+    color: #ffffff; /* 更改字體顏色 */
+}
+
+    .modal-footer .report:hover {
+        border-color: #ffffff; /* 更改鼠標懸停邊框顏色 */
+        background-color: #ffffff; /* 更改鼠標懸停背景顏色 */
+        color: #007bff; /* 更改鼠標懸停字體顏色 */
+    }
+
+.modal-footer .return {
+    border-color: #ff0000; /* 更改邊框顏色 */
+    background-color: #ff0000; /* 更改背景顏色 */
+    color: #ffffff; /* 更改字體顏色 */
+}
+
+    .modal-footer .return:hover {
+        border-color: #ffffff; /* 更改鼠標懸停邊框顏色 */
+        background-color: #ffffff; /* 更改鼠標懸停背景顏色 */
+        color: #007bff; /* 更改鼠標懸停字體顏色 */
+    }
+
+li:hover {
+    /* border-bottom: 3px solid rgb(109, 139, 0); */
+    background-color: #adb5bd;
+}
+
+.glowing-header {
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px #ffffff;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #ffffff;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #ffffff;
+    }
+}
+
+/* 定義動畫 */
+@keyframes glowing {
+    0% {
+        background-color: #d7fc05;
+        box-shadow: 0 0 10px #d7fc05;
+    }
+
+    50% {
+        background-color: #d7fc05;
+        box-shadow: 0 0 20px #d7fc05;
+    }
+
+    100% {
+        background-color: #d7fc05;
+        box-shadow: 0 0 10px #d7fc05;
+    }
+}
+
+/* 設置樣式 */
+.display-6 {
+    animation: glowing 2s linear infinite;
+}
+/* 設置樣式 */
+.display-6 {
+    animation-duration: 0.5s;
+    animation-name: slideInDown;
+}
+
+

@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "LOL_REPORT";
+}
+<button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" id="demo" style="display: none;" type="button">Launch demo modal</button> <!-- modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content bg-dark text-white modal-dialog-centered">
+			<div class="modal-header glowing-header">
+				<h5 class="modal-title fs-4 fw-bold text-primary" id="exampleModalLabel">英雄聯盟喜好表產生器</h5>
+			</div>
+			<div class="modal-body">
+				<h1 class="display-6 text-outline-primary question text-center">第一題:入坑英雄</h1>
+				<div class="input-group mb-3">
+					<input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control bg-dark text-white border-secondary" data-bs-toggle="dropdown" id="search" onkeydown="searchFunction()" placeholder="請輸入英雄名稱" type="text"> <button class="btn btn-outline-danger border-secondary" id="lock" type="button" onclick="confirmAnswer()">鎖定答案</button>
+					<ul class="dropdown-menu bg-dark text-white" id="myUL"></ul>
+				</div>
+				<div class="alert-warn text-center glow-effect1" style="height:24px;"></div>
+			</div>
+			<div class="modal-footer bg-dark">
+				<button class="btn btn-outline-info border-secondary" disabled id="button-pre" onclick="previousQuestion()" type="button">上一題</button>
+				<button class="btn btn-outline-info border-secondary" id="button-next" onclick="nextQuestion()" type="button">下一題</button>
+				<button class="btn btn-outline-info border-secondary downloadpdf" id="button-download" onclick="downloadPDF()" type="button"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none"></span>下載</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
